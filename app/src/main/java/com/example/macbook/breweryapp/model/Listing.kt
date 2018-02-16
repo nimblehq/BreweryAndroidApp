@@ -1,4 +1,4 @@
-package com.example.macbook.breweryapp
+package com.example.macbook.breweryapp.model
 
 import android.arch.lifecycle.LiveData
 import android.arch.paging.PagedList

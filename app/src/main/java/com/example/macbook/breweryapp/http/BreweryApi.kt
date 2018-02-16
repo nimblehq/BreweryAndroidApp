@@ -1,5 +1,6 @@
-package com.example.macbook.breweryapp
+package com.example.macbook.breweryapp.http
 
+import com.example.macbook.breweryapp.model.Beer
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -25,7 +26,7 @@ interface BreweryApi {
                     .addInterceptor { chain ->
                         val newRequest = with(chain.request()) {
                             val newUrl = this.url().newBuilder()
-                                    .addQueryParameter("key", "ss") //TODO: add key later
+                                    .addQueryParameter("key", "ss") //TODO: add key later 9741e805409497a470490a9e9a3908d8
                                     .build()
 
                             this.newBuilder()

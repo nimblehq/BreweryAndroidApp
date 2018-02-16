@@ -1,9 +1,10 @@
-package com.example.macbook.breweryapp
+package com.example.macbook.breweryapp.ui.brewery
 
 import android.arch.paging.PagedListAdapter
 import android.support.v7.recyclerview.extensions.DiffCallback
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
+import com.example.macbook.breweryapp.model.Beer
 
 class BrewsAdapter : PagedListAdapter<Beer, RecyclerView.ViewHolder>(POST_COMPARATOR){
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RecyclerView.ViewHolder {

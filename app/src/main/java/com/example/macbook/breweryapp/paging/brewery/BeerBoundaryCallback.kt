@@ -1,7 +1,9 @@
-package com.example.macbook.breweryapp
+package com.example.macbook.breweryapp.paging.brewery
 
 import android.arch.paging.PagedList
 import android.support.annotation.MainThread
+import com.example.macbook.breweryapp.http.BreweryApi
+import com.example.macbook.breweryapp.model.Beer
 import java.util.concurrent.Executor
 
 class BeerBoundaryCallback(
